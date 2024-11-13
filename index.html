@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jonnathan Website</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <div class="progress-bar" id="myBar"></div>
+        <header>
+            <div class="logo">
+                <a href="#">JH</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()">SERVICIOS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">QUE HAGO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="hero-header">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="img/Iniciales.png" alt="profile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Hola, soy Jonnathan Heras</h1>
+                        <h2><span class="input"></span></h2>
+                        <p> Aprendiendo Data Analytics para transformar datos en decisiones inteligentes.
+                        </p>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/jonnathan1093/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Jonnathan1093"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://x.com/jonnathan1093?t=8AUFkHEqkj5ZlaHi3YY5XA&s=09"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="mailto:jonnathan1093@yahoo.com"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p align="justify">
+                Bienvenido, soy <span>Jonnathan Heras</span>, un apasionado de la tecnología y el aprendizaje continuo.
+                Mi objetivo es compartir mis conocimientos y proyectos, además de crecer en el mundo digital.
+            </p>
+            <p align="justify">
+                <span><strong>¿Qué encontrarás en esta página?</strong></span> <br><br>Este espacio está diseñado para
+                mostrar mi trayectoria profesional, compartir proyectos en el ámbito de la tecnología y la innovación,
+                conectar con personas que comparten intereses afines. Aquí encontrarás ejemplos de mi trabajo,
+                experiencias colaborativas y aprendizajes adquiridos en diferentes áreas de tecnología.
+            </p>
+            <p align="justify">
+                <span><strong>¿Qué estoy haciendo actualmente?</strong></span> <br><br>Estoy ampliando mis
+                habilidades en análisis de datos y desarrollando competencias prácticas aplicables en entornos
+                empresariales. Poseo conocimientos en control de versiones con GitLab y fundamentos de seguridad
+                informática. Combino mis habilidades técnicas y pedagógicas para ofrecer soluciones orientadas a
+                resultados.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>DATOS PERSONALES</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Lugar:</strong> <a href="https://www.google.com/maps?q=Ecuador" target="_blank"
+                                style="color: #ffffff; text-decoration: none;">Ecuador</a>
+                        </li>
+                        <li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <strong>Email:</strong> <a href="mailto:jonnathan1093@yahoo.com"
+                                style="color: #ffffff; text-decoration: none; font-size: 15.3px;">jonnathan1093@yahoo.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <strong>Website:</strong> <a href="https://github.com/Jonnathan1093/web" target="_blank"
+                                style="color: #ffffff; text-decoration: none;">www.example.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <strong>Teléfono:</strong> <a href="https://wa.me/593999700766" target="_blank"
+                                style="color: #ffffff; text-decoration: none;">+593 9997007**</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-briefcase"></i>
+                            <strong>Profesión:</strong> Analista de Sistemas
+                        </li>
+                        <li>
+                            <i class="fas fa-user-tie"></i>
+                            <strong>Cargo:</strong> <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>HOBBIES</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>BOTS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <!-- <div class="interes">
+<i class="fa-solid fa-book"></i>
+<span>LIBROS</span>
+</div> -->
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-user-ninja"></i>
+                            <span>ANIME</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-image"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="timeline">
+                <div class="item">
+                    <h4>Auxiliar docente de inglés</h4>
+                    <span class="casa">Unidad Educativa Particular “San Francisco de Sales”</span>
+                    <span class="fecha">2023 - 2024</span>
+                    <p align="justify">Como auxiliar docente de inglés, participé activamente en la planificación y
+                        diseño de clases para distintos niveles educativos (séptimo de básica a tercero de
+                        bachillerato), asegurando contenidos atractivos y efectivos. <br><br>Desarrollé material
+                        didáctico personalizado, impartí lecciones, evalué el progreso de los estudiantes y brindé
+                        apoyo adicional cuando fue necesario. Mi enfoque se centró en mejorar el proceso de
+                        enseñanza-aprendizaje mediante metodologías que incentivaran la participación y una
+                        comprensión profunda de los contenidos.</p>
+                </div>
+                <div class="item">
+                    <h4>Coordinador de versiones</h4>
+                    <span class="casa">Banco del Austro (Contrato de prácticas)</span>
+                    <span class="fecha">2023 - 2023</span>
+                    <p align="justify">Gestioné el control de versiones en GitLab, incluyendo la creación, edición y
+                        actualización de Wikis sobre comandos y configuraciones esenciales. <br><br>Desarrollé
+                        experiencia en asignación de roles y permisos, fortaleciendo mi comprensión de la gestión de
+                        accesos en entornos de desarrollo colaborativo. <br><br>Investigué herramientas como Swagger
+                        y optimicé flujos de trabajo, además de colaborar en el levantamiento de información de
+                        repositorios para mejorar la organización de proyectos en un entorno empresarial.</p>
+                </div>
+                <div class="item">
+                    <h4>Analista de sistemas</h4>
+                    <span class="casa">Sisfel (Empresa de facturación electrónica)</span>
+                    <span class="fecha">2018 - 2019</span>
+                    <p align="justify">Formé parte del equipo encargado de la migración y actualización de un
+                        sistema de facturación, donde participe en el desarrollo de nuevas funcionalidades y
+                        optimizaciones existentes. <br><br>Mi trabajo incluyó una estrecha colaboración con bases de
+                        datos, mejorando consultas y procedimientos para asegurar una transición eficiente y sin
+                        contratiempos, manteniendo la integridad y el rendimiento de los datos durante todo el
+                        proceso.</p>
+                </div>
+                <div class="item">
+                    <h4>Técnico en Redes de Datos</h4>
+                    <span class="casa">Equisum (Instalación de equipos y suministros de red)</span>
+                    <span class="fecha">2018 - 2018</span>
+                    <p align="justify">Responsable de la instalación, provisión y mantenimiento de equipos de redes,
+                        internet corporativo y transmisión de datos, asegurando su óptimo funcionamiento.
+                        <br><br>Gestioné la provisión de equipos de comunicación, garantizando el cumplimiento de
+                        estándares técnicos y de calidad en cada proyecto, y ofreciendo soporte continuo para
+                        maximizar la eficiencia de los sistemas implementados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-user"></i></span>
+                <h4>Social Media</h4>
+                <!-- <hr /> -->
+                <ul class="servicios-tag">
+                    <li>¡En todos lados!</li>
+                    <!-- <li>Graphic</li>
+<li>SEO</li> -->
+                </ul>
+                <p>
+                    Crea vínculos con tu audiencia, a través de contenido de valor para
+                    posicionar tu marca en redes sociales.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>Consultoría</h4>
+                <!-- <hr /> -->
+                <ul class="servicios-tag">
+                    <li>¡Dispuesto a ayudarte!</li>
+                    <!-- <li>Graphic</li>
+<li>SEO</li> -->
+                </ul>
+                <p>
+                    Organicemos tus ideas, planifiquemos acciones, y te acompañare con
+                    tu proyecto personal.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Análisis de Datos</h4>
+                <!-- Soporte -->
+                <!-- <hr /> -->
+                <ul class="servicios-tag">
+                    <li>¡Transforma datos en desiciones!</li>
+                    <!-- <li>Graphic</li>
+<li>SEO</li> -->
+                </ul>
+                <p>
+                    Descubre patrones, tendencias y oportunidades clave que te permitan mejorar tus estrategias y
+                    resultados.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>QUE ESTOY HACIENDO</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Aventuras y exploración</h3>
+                    <div class="skill">
+                        <span>Viajar a nuevos destinos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Deportes al aire libre</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Fotografía de viajes</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Turismo gastronómico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Paseos con mascotas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Aprendizaje y diversión</h3>
+                    <div class="skill">
+                        <span>Aprender un nuevo idioma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Nuevas habilidades tecnológicas </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ver anime y manga</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Juegos virtuales y de mesa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Cine y documentales</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <h3 class="titulo-seccion">PORTAFOLIO</h3>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile1.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Davide Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                            <a href="https://www.freecodecamp.org/" target="_blank">
+                                <button class="button">Visitar</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/profile2.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+
+                            <button class="button">Visitar</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/profile3.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+
+                            <button class="button">Visitar</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/profile4.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+
+                            <button class="button">Visitar</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/profile5.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+
+                            <button class="button">Visitar</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/profile6.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+
+                            <button class="button">Visitar</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/profile7.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+
+                            <button class="button">Visitar</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/profile8.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+
+                            <button class="button">Visitar</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/profile9.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">
+                                The lorem text the section that contains header with having
+                                open functionality. Lorem dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+
+                            <button class="button">Visitar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/jonnathan1093/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Jonnathan1093"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/jonnathan1093?t=8AUFkHEqkj5ZlaHi3YY5XA&s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:jonnathan1093@yahoo.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+    <!-- BOTON DESPLAZAMIENTO -->
+    <button class="btn-scrolltop" id="btn_scrolltop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- FIN BOTON DESPLAZAMIENTO -->
+    <script src="js/script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        /* Funcion tipeo */
+        var typed = new Typed(".input", {
+            strings: ["Developer.", "UX Designer."],
+            typeSpeed: 70,
+            backSpeed: 50,
+            loop: true,
+        });
+
+        /* Funsion Slider */
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            loop: true,
+            centerSlide: "true",
+            fade: "true",
+            grabCursor: "true",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        /* código para desactivar el clic derecho. Nota, para comentar usar // */
+        document.oncontextmenu = function () { return false; }
+        /* código para deshabilitar el F12 */
+        document.onkeydown = function () { return false; }
+        let lastMouseMoveTime = Date.now();
+        
+
+    </script>
+</body>
+
+</html>

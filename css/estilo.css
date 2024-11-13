@@ -1,0 +1,1063 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&family=Russo+One&display=swap');
+
+* {
+  font-family: "Pridi", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header {
+  background: rgba(0, 0, 0, .8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.contenedor-header header .logo a {
+  font-family: 'Russo One';
+  font-size: 20px;
+  color: #00beee;
+  text-decoration: none;
+}
+
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+  color: #00beee;
+}
+
+.nav-responsive {
+  background-color: #00beee;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.contenedor-header header nav ul li a.activo {
+  color: #00beee;
+  /* Color que se queda activo */
+  font-weight: bold;
+  /* Opcional: Puedes agregar un efecto visual adicional */
+}
+
+/* SECCION I N I C I O */
+/* .inicio{
+background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+url(img/fondo.jpg);
+background-size: cover;
+height: 100vh;
+color: #fff;
+display: flex;
+align-items: center;
+} */
+
+
+.wrapper {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Header */
+.hero-header {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #141414;
+  padding-top: 80px;
+  /* Ajusta este valor según la altura del header */
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.container .hero-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 15px solid #00beee;
+  box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero-pic img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.hero-pic img:hover {
+  transform: scale(1.2);
+}
+
+.hero-text {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text h5 {
+  color: #e5e5e5;
+  font-size: 14px;
+}
+
+.hero-text h5 span {
+  color: #00beee;
+  font-size: 16px;
+}
+
+.hero-text h1 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.hero-text h2 {
+  color: #00beee;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #e5e5e5;
+
+}
+
+.btn-group {
+  margin: 45px 0;
+}
+
+/* INICIO CENTRAR ICONOS INICIO */
+.hero-text .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FIN CENTRAR ICONOS INICIO*/
+.hero-text .social i {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  /* Igual que el alto del contenedor */
+  text-align: center;
+  /* Centra el ícono horizontalmente */
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.hero-text .social i:hover {
+  background-color: #00beee;
+}
+
+/*SOBRE MI*/
+
+.sobremi {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sobremi h2 {
+  font-size: 2rem;
+  font-family: 'Russo One';
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+.sobremi .contenido-seccion p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span {
+  color: #00beee;
+  font-weight: bold;
+}
+
+.sobremi .fila {
+  display: flex;
+}
+
+.sobremi .fila .col {
+  width: 50%;
+}
+
+.sobremi .fila .col h3 {
+  font-size: 28px;
+  font-family: 'Russo One';
+  margin-bottom: 25px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.sobremi .fila .col ul {
+  list-style: none;
+}
+
+.sobremi .fila .col ul li {
+  margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong {
+  display: inline-block;
+  color: #00beee;
+  width: 130px;
+}
+
+.sobremi .fila .col ul li span {
+  background-color: #00beee;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes {
+  width: 100px;
+  height: 100px;
+  background-color: #141414;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+  background-color: #00beee;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sobremi button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.sobremi button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #00beee;
+  z-index: -1;
+  transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+  width: 100%;
+}
+
+/* SECCION S K I L L S */
+.skills {
+  background-color: #141414;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  font-family: 'Russo One';
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+.skills .fila {
+  display: flex;
+}
+
+.skills .fila .col {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.skills .fila .col h3 {
+  font-size: 28px;
+  font-family: 'Russo One';
+  margin-bottom: 25px;
+}
+
+.skills .skill>span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill {
+  height: 8px;
+  width: 80%;
+  background-color: #000000;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.skills .skill .progreso {
+  background-color: #00beee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+
+.skills .skill .barra-skill span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #00beee;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .javascript {
+  width: 0%;
+  animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+.skills .skill .htmlcss {
+  width: 0%;
+  animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.skills .skill .photoshop {
+  width: 0%;
+  animation: 2s photoshop forwards;
+}
+
+@keyframes photoshop {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+.skills .skill .wordpress {
+  width: 0%;
+  animation: 2s wordpress forwards;
+}
+
+@keyframes wordpress {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+.skills .skill .drupal {
+  width: 0%;
+  animation: 2s drupal forwards;
+}
+
+@keyframes drupal {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+.skills .skill .comunicacion {
+  width: 0%;
+  animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+.skills .skill .trabajo {
+  width: 0%;
+  animation: 2s trabajo forwards;
+}
+
+@keyframes trabajo {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.skills .skill .creatividad {
+  width: 0%;
+  animation: 2s creatividad forwards;
+}
+
+@keyframes creatividad {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 55%;
+  }
+}
+
+.skills .skill .dedicacion {
+  width: 0%;
+  animation: 2s dedicacion forwards;
+}
+
+@keyframes dedicacion {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+.skills .skill .proyect {
+  width: 0%;
+  animation: 2s proyect forwards;
+}
+
+@keyframes proyect {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
+/* SECCION CURRICULUM */
+.curriculum{
+  background-color: #141414;
+  color: #fff;
+  padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.curriculum h2{
+  font-size: 2rem;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 50px; /* Espacio para los puntos */
+}
+
+.timeline .item {
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #141414;
+  position: relative;
+  border-left: 3px solid #00beee;
+}
+
+.timeline .item h4{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.timeline .item .casa{
+  color: #00beee;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+.timeline .item .fecha{
+  display: block;
+  color: #00beee;
+  margin-bottom: 10px;
+}
+.timeline .item p{
+  line-height: 24px;
+}
+
+.timeline .item:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 30px;
+  height: 12px;
+  width: 12px;
+  background-color: #00beee;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #141414;
+}
+
+.timeline .item:nth-child(even) {
+  background-color: #222222;
+}
+
+.timeline .item:nth-child(odd) {
+  background-color: #141414;
+}
+
+/* .curriculum .fila .item .conectori{
+  height: 2px;
+  background-color: #00beee;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  right: -47px;
+  z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #00beee;
+  float: right;
+  position: relative;
+  bottom: 4px;
+} */
+/* .curriculum .fila .item .conectord{
+  height: 2px;
+  background-color: #00beee;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  left: -47px;
+  z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #00beee;
+  float: left;
+  position: relative;
+  bottom: 4px;
+} */
+
+#servicios {
+  padding: 80px 15px;
+  text-align: center;
+  background-color: #000000;
+}
+
+#servicios .titulo-seccion {
+  font-size: 2rem;
+  font-family: "Russo One";
+  color: #fff;
+}
+
+#servicios .fila {
+  display: flex;
+  flex-wrap: wrap;
+  /* Asegura que los elementos se ajusten a nuevas líneas */
+  justify-content: center;
+  /* Centra las columnas dentro de la fila */
+  max-width: 1150px;
+  margin: 30px auto;
+  color: #fff;
+}
+
+#servicios .fila .servicio {
+  max-width: 350px;
+  /* Establece un ancho máximo para cada servicio */
+  background-color: #141414;
+  padding: 30px;
+  margin: 15px;
+  /* Da un margen para separar los servicios */
+  border-radius: 5px;
+  transition: 0.5s;
+  text-align: center;
+  flex: 1 1 30%;
+  /* Hace que cada servicio ocupe el 30% del ancho de la fila */
+  box-sizing: border-box;
+  /* Asegura que los márgenes y padding no afecten el tamaño total */
+}
+
+#servicios .fila .servicio:hover {
+  box-shadow: 5px 5px 10px #00beee, -5px -5px 10px #0061bd;
+}
+
+#servicios .fila .servicio .icono {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #00beee;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+#servicios .fila .servicio h4 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#servicios .fila .servicio hr {
+  width: 30%;
+  margin: auto;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+#servicios .fila .servicio ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* Centra los íconos */
+  margin-bottom: 10px;
+  color: #00beee;
+}
+
+#servicios .fila .servicio p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* SECCION PORTFOLIO */
+.portfolio {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.portfolio h3 {
+  font-size: 2rem;
+  font-family: "Russo One";
+  /* margin-bottom: 25px; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.card-image {
+  position: relative;
+  height: 220px;
+  width: 95%;
+  border-radius: 5%;
+  /* background: #FFF; */
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  /* border: 4px solid #0061bd; */
+}
+
+.section .portfolio .portfolio {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #141414;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 20px 0;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #00beee;
+}
+
+.description {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #00beee;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #0061bd;
+}
+
+.portfolio .slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.portfolio .slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.swiper-navBtn {
+  color: #00beee;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #00beee;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #00beee;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #00beee;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px 0 1px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer .redes {
+  margin-bottom: 2px;
+}
+
+footer .redes a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+footer .redes a:hover {
+  background: #00beee;
+}
+
+footer .arriba {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #00beee;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+footer .arriba:hover {
+  background-color: #0061bd;
+  /* Color de fondo al pasar el cursor */
+  /* box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); */
+  border: 1px solid #0061bd;
+  transform: translateX(-50%);
+}
+
+/* Boton up */
+.btn-scrolltop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00beee;
+  color: wheat;
+  padding: 10px;
+  border: 1px solid #00beee;
+  border-radius: 25%;
+  cursor: pointer;
+  /*manoalpasarelmouse*/transform: translateY(100px);
+  transition: 0.3s;
+}
+
+.btn-scrolltop-on {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.btn-scrolltop:hover {
+  background-color: #0061bd;
+  /* Color de fondo al pasar el cursor */
+  /* box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); */
+  border: 1px solid #0061bd;
+  transform: translateY(-7px);
+}
+
+/* Barra de progreso */
+.progress-bar {
+  height: 2px;
+  background: #00beee;
+  width: 0%;
+}
+
+
+/* SECCIÓN RESPONSIVE */
+
+/* Vista a 980px de ancho o menor */
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+
+  .nav-responsive {
+    display: block;
+  }
+
+  nav.responsive {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+  }
+
+  nav.responsive ul {
+    display: block !important;
+  }
+
+  nav.responsive ul li {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Vista a 700px de ancho o menor */
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .hero-text {
+    padding: 40px 0;
+  }
+
+  /* Sección "Sobre Mí" */
+  .sobremi .fila,
+  .skills .fila,
+  .curriculum .fila {
+    display: block;
+  }
+
+  .sobremi .fila .col,
+  .curriculum .fila .col {
+    width: fit-content;
+  }
+
+  .skills .fila .col,
+  .skills .fila .col .barra-skill {
+    width: 100%;
+  }
+
+  .curriculum .fila .derecha {
+    margin-left: 20px;
+  }
+
+  /* Sección "Mis Servicios" */
+  #servicios {
+    padding: 50px 15px;
+  }
+
+  #servicios .fila {
+    display: block;
+    max-width: 100%;
+  }
+
+  #servicios .fila .servicio {
+    margin: 10px auto;
+    width: 90%;
+  }
+}
