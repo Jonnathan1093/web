@@ -41,7 +41,7 @@ html {
 .contenedor-header header .logo a {
   font-family: 'Russo One';
   font-size: 20px;
-  color: #00beee;
+  color: #009cc4;
   text-decoration: none;
 }
 
@@ -60,11 +60,11 @@ html {
 }
 
 .contenedor-header header nav ul li a:hover {
-  color: #00beee;
+  color: #009cc4;
 }
 
 .nav-responsive {
-  background-color: #00beee;
+  background-color: #009cc4;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -73,7 +73,7 @@ html {
 }
 
 .contenedor-header header nav ul li a.activo {
-  color: #00beee;
+  color: #009cc4;
   /* Color que se queda activo */
   font-weight: bold;
   /* Opcional: Puedes agregar un efecto visual adicional */
@@ -89,6 +89,14 @@ color: #fff;
 display: flex;
 align-items: center;
 } */
+
+
+/* Estilo para el logo en la cabecera */
+.logo a img {
+  width: 30px; /* Ajusta el ancho del logo a un tamaño adecuado */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  display: block; /* Elimina el espacio blanco debajo de la imagen */
+}
 
 
 .wrapper {
@@ -119,9 +127,9 @@ align-items: center;
 .container .hero-pic {
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   overflow: hidden;
-  border: 15px solid #00beee;
+  /* border: 15px solid #009cc4; */
   box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -131,9 +139,9 @@ align-items: center;
   transition: 0.5s;
 }
 
-.hero-pic img:hover {
+/* .hero-pic img:hover {
   transform: scale(1.2);
-}
+} */
 
 .hero-text {
   max-width: 500px;
@@ -147,7 +155,7 @@ align-items: center;
 }
 
 .hero-text h5 span {
-  color: #00beee;
+  color: #009cc4;
   font-size: 16px;
 }
 
@@ -157,13 +165,14 @@ align-items: center;
 }
 
 .hero-text h2 {
-  color: #00beee;
+  color: #009cc4;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .hero-text p {
   color: #e5e5e5;
+  font-size: 1.5rem;
 
 }
 
@@ -197,7 +206,7 @@ align-items: center;
 }
 
 .hero-text .social i:hover {
-  background-color: #00beee;
+  background-color: #009cc4;
 }
 
 /*SOBRE MI*/
@@ -228,7 +237,7 @@ align-items: center;
 }
 
 .sobremi .contenido-seccion p span {
-  color: #00beee;
+  color: #009cc4;
   font-weight: bold;
 }
 
@@ -260,12 +269,12 @@ align-items: center;
 
 .sobremi .fila .col ul li strong {
   display: inline-block;
-  color: #00beee;
+  color: #009cc4;
   width: 130px;
 }
 
 .sobremi .fila .col ul li span {
-  background-color: #00beee;
+  background-color: #009cc4;
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
@@ -291,7 +300,7 @@ align-items: center;
 }
 
 .sobremi .fila .col .contenedor-intereses .interes:hover {
-  background-color: #00beee;
+  background-color: #009cc4;
 }
 
 .sobremi .fila .col .contenedor-intereses .interes i {
@@ -319,7 +328,7 @@ align-items: center;
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #00beee;
+  background-color: #009cc4;
   z-index: -1;
   transition: 1s;
 }
@@ -378,7 +387,7 @@ align-items: center;
 }
 
 .skills .skill .progreso {
-  background-color: #00beee;
+  background-color: #009cc4;
   position: absolute;
   top: 0;
   left: 0;
@@ -389,7 +398,7 @@ align-items: center;
   position: absolute;
   height: 40px;
   width: 40px;
-  background-color: #00beee;
+  background-color: #009cc4;
   border-radius: 50px;
   line-height: 40px;
   text-align: center;
@@ -578,7 +587,7 @@ align-items: center;
   margin-bottom: 30px;
   background-color: #141414;
   position: relative;
-  border-left: 3px solid #00beee;
+  border-left: 3px solid #009cc4;
 }
 
 .timeline .item h4{
@@ -586,14 +595,14 @@ align-items: center;
   margin-bottom: 10px;
 }
 .timeline .item .casa{
-  color: #00beee;
+  color: #009cc4;
   font-size: 18px;
   font-weight: bold;
   display: block;
 }
 .timeline .item .fecha{
   display: block;
-  color: #00beee;
+  color: #009cc4;
   margin-bottom: 10px;
 }
 .timeline .item p{
@@ -607,7 +616,7 @@ align-items: center;
   top: 30px;
   height: 12px;
   width: 12px;
-  background-color: #00beee;
+  background-color: #009cc4;
   border-radius: 50%;
   box-shadow: 0 0 0 3px #141414;
 }
@@ -622,7 +631,7 @@ align-items: center;
 
 /* .curriculum .fila .item .conectori{
   height: 2px;
-  background-color: #00beee;
+  background-color: #009cc4;
   width: 47px;
   position: absolute;
   top: 50%;
@@ -634,14 +643,14 @@ align-items: center;
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #00beee;
+  background-color: #009cc4;
   float: right;
   position: relative;
   bottom: 4px;
 } */
 /* .curriculum .fila .item .conectord{
   height: 2px;
-  background-color: #00beee;
+  background-color: #009cc4;
   width: 47px;
   position: absolute;
   top: 50%;
@@ -653,7 +662,7 @@ align-items: center;
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #00beee;
+  background-color: #009cc4;
   float: left;
   position: relative;
   bottom: 4px;
@@ -699,7 +708,7 @@ align-items: center;
 }
 
 #servicios .fila .servicio:hover {
-  box-shadow: 5px 5px 10px #00beee, -5px -5px 10px #0061bd;
+  box-shadow: 5px 5px 10px #009cc4, -5px -5px 10px #009cc4;
 }
 
 #servicios .fila .servicio .icono {
@@ -707,7 +716,7 @@ align-items: center;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #00beee;
+  background-color: #009cc4;
   padding: 20px;
   margin-bottom: 25px;
 }
@@ -730,7 +739,7 @@ align-items: center;
   justify-content: center;
   /* Centra los íconos */
   margin-bottom: 10px;
-  color: #00beee;
+  color: #009cc4;
 }
 
 #servicios .fila .servicio p {
@@ -759,22 +768,49 @@ align-items: center;
   justify-content: center;
 }
 
-.card-image {
+/* Proporción 1365x720, 1366x713 (aproximadamente 16:9) */
+.card-image.aspect-16-9 {
   position: relative;
-  height: 220px;
-  width: 95%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
   border-radius: 5%;
-  /* background: #FFF; */
-  padding: 3px;
+}
+
+/* Proporción 1280x629 (aproximadamente 16:8) */
+.card-image.aspect-16-8 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  border-radius: 5%;
+}
+
+/* Proporción 1280x606 (aproximadamente 16:7.5) */
+.card-image.aspect-16-7-5 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 7.5;
+  overflow: hidden;
+  border-radius: 5%;
+}
+
+/* Proporción 679x437, 660x492 (aproximadamente 4:3) */
+.card-image.aspect-4-3 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 5%;
 }
 
 .card-image .card-img {
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin distorsión */
   border-radius: 2%;
-  /* border: 4px solid #0061bd; */
 }
+
 
 .section .portfolio .portfolio {
   min-height: 100vh;
@@ -787,7 +823,28 @@ align-items: center;
 .card {
   border-radius: 25px;
   background-color: #141414;
+  padding: 10px; /* Padding fijo */
+  width: 300px; /* Ajusta según el tamaño que necesites para las tarjetas */
 }
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 180px; /* Altura fija para mantener el tamaño uniforme */
+  overflow: hidden;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Rellena el contenedor sin distorsión */
+  border-radius: 2%;
+}
+
 
 .slide-content {
   margin: 0 40px;
@@ -812,11 +869,11 @@ align-items: center;
 .name {
   font-size: 18px;
   font-weight: 500;
-  color: #00beee;
+  color: #ffffff;
 }
 
 .description {
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
   text-align: center;
 }
@@ -826,7 +883,7 @@ align-items: center;
   font-size: 16px;
   color: #fff;
   padding: 8px 16px;
-  background-color: #00beee;
+  background-color: #009cc4;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
@@ -850,12 +907,12 @@ align-items: center;
 }
 
 .swiper-navBtn {
-  color: #00beee;
+  color: #009cc4;
   transition: color 0.3s ease;
 }
 
 .swiper-navBtn:hover {
-  color: #00beee;
+  color: #009cc4;
 }
 
 .swiper-navBtn::before,
@@ -872,12 +929,12 @@ align-items: center;
 }
 
 .swiper-pagination-bullet {
-  background-color: #00beee;
+  background-color: #009cc4;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #00beee;
+  background-color: #009cc4;
 }
 
 @media screen and (max-width: 768px) {
@@ -918,14 +975,14 @@ footer .redes a {
 }
 
 footer .redes a:hover {
-  background: #00beee;
+  background: #009cc4;
 }
 
 footer .arriba {
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #00beee;
+  background-color: #009cc4;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -949,10 +1006,10 @@ footer .arriba:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #00beee;
+  background: #009cc4;
   color: wheat;
   padding: 10px;
-  border: 1px solid #00beee;
+  border: 1px solid #009cc4;
   border-radius: 25%;
   cursor: pointer;
   /*manoalpasarelmouse*/transform: translateY(100px);
@@ -968,96 +1025,147 @@ footer .arriba:hover {
 }
 
 .btn-scrolltop:hover {
-  background-color: #0061bd;
+  background-color: #000000;
   /* Color de fondo al pasar el cursor */
-  /* box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); */
-  border: 1px solid #0061bd;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #009cc4;
   transform: translateY(-7px);
 }
 
 /* Barra de progreso */
 .progress-bar {
   height: 2px;
-  background: #00beee;
+  background: #009cc4;
   width: 0%;
+}
+
+/* Estilos generales para el tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Texto del tooltip */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  white-space: nowrap; /* Evita que el texto se ajuste a varias líneas */
+  background-color: #333;
+  color: #fff;
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 50%; /* Posiciona el tooltip al centro verticalmente */
+  left: 105%; /* Posiciona el tooltip al lado derecho del texto */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  max-width: 250px; /* Limita el ancho del tooltip */
+  word-wrap: break-word; /* Permite que el texto se rompa si es muy largo */
+}
+
+/* Muestra el tooltip al pasar el mouse */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 
 /* SECCIÓN RESPONSIVE */
 
-/* Vista a 980px de ancho o menor */
+/* Estilos para dispositivos móviles */
 @media screen and (max-width: 980px) {
   nav {
-    display: none;
+      display: none;
   }
 
   .nav-responsive {
-    display: block;
+      display: block;
   }
 
   nav.responsive {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 48px;
-    background-color: rgba(0, 0, 0, .8);
-    width: 100%;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 48px;
+      background-color: rgba(0, 0, 0, .8);
+      width: 100%;
   }
 
   nav.responsive ul {
-    display: block !important;
+      display: block !important;
   }
 
   nav.responsive ul li {
-    padding: 10px 0;
-    text-align: center;
+      padding: 10px 0;
+      text-align: center;
+  }
+
+  /* Tooltip en pantallas pequeñas (980px o menor) */
+  .tooltip .tooltiptext {
+      width: auto; /* Ajusta el ancho al contenido */
+      max-width: 182px; /* Limita el ancho máximo en pantallas pequeñas */
+      top: 110%; /* Mueve el tooltip debajo del texto */
+      left: 50%;
+      transform: translateX(-50%); /* Centra el tooltip horizontalmente */
   }
 }
 
 /* Vista a 700px de ancho o menor */
 @media screen and (max-width: 700px) {
   .container {
-    flex-direction: column;
-    padding-top: 2rem;
+      flex-direction: column;
+      padding-top: 2rem;
   }
 
   .hero-text {
-    padding: 40px 0;
+      padding: 40px 0;
   }
 
   /* Sección "Sobre Mí" */
   .sobremi .fila,
   .skills .fila,
   .curriculum .fila {
-    display: block;
+      display: block;
   }
 
   .sobremi .fila .col,
   .curriculum .fila .col {
-    width: fit-content;
+      width: fit-content;
   }
 
   .skills .fila .col,
   .skills .fila .col .barra-skill {
-    width: 100%;
+      width: 100%;
   }
 
   .curriculum .fila .derecha {
-    margin-left: 20px;
+      margin-left: 20px;
   }
 
   /* Sección "Mis Servicios" */
   #servicios {
-    padding: 50px 15px;
+      padding: 50px 15px;
   }
 
   #servicios .fila {
-    display: block;
-    max-width: 100%;
+      display: block;
+      max-width: 100%;
   }
 
   #servicios .fila .servicio {
-    margin: 10px auto;
-    width: 90%;
+      margin: 10px auto;
+      width: 90%;
   }
+
+  /* Tooltip en pantallas pequeñas (700px o menor) */
+  .tooltip .tooltiptext {
+    width: auto; /* Ajusta el ancho al contenido */
+    max-width: 182px; /* Limita el ancho máximo en pantallas muy pequeñas */
+    top: 110%; /* Mueve el tooltip debajo del texto */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el tooltip horizontalmente */
+}
 }

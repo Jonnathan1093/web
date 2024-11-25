@@ -82,8 +82,8 @@ function myFunction() {
 // Configuración del swiper
 var swiper = new Swiper('.blog-slider', {
     spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
+    effect: 'slide',  // Cambiado de 'fade' a 'slide'
+    loop: false,  // Cambiado a false para evitar el ciclo infinito
     mousewheel: {
         invert: false,
     },
@@ -92,3 +92,26 @@ var swiper = new Swiper('.blog-slider', {
         clickable: true,
     }
 });
+
+// Detener la propagación del clic en los botones "Visitar"
+const visitButtons = document.querySelectorAll('.visit-btn');
+visitButtons.forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.stopPropagation();  // Detener el clic para evitar el cambio de slide
+        const url = this.getAttribute('data-url');  // Obtener URL del botón
+        window.location.href = url;  // Redirigir a la URL
+    });
+});
+
+// Cargar el script ofuscado
+fetch('js/script.obf.js')  // Ruta de tu script ofuscado o minificado
+  .then(response => response.text())
+  .then(scriptContent => {
+      var scriptTag = document.createElement('script');
+      scriptTag.text = scriptContent;
+      document.body.appendChild(scriptTag);
+  })
+  .catch(error => {
+      console.error('Error cargando el script:', error);
+  });
+
