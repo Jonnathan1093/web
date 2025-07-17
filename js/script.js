@@ -27,23 +27,67 @@ function seleccionar() {
 }
 
 // Función que aplica las animaciones de las habilidades
+// function efectoHabilidades() {
+//     var skills = document.getElementById("skills");
+//     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+//     if (distancia_skills >= 300) {
+//         let habilidades = document.getElementsByClassName("progreso");
+//         habilidades[0].classList.add("javascript");
+//         habilidades[1].classList.add("htmlcss");
+//         habilidades[2].classList.add("photoshop");
+//         habilidades[3].classList.add("wordpress");
+//         habilidades[4].classList.add("drupal");
+//         habilidades[5].classList.add("comunicacion");
+//         habilidades[6].classList.add("trabajo");
+//         habilidades[7].classList.add("creatividad");
+//         habilidades[8].classList.add("dedicacion");
+//         habilidades[9].classList.add("proyect");
+//     }
+// }
+
+// INICIO ESTE CODIGO SOLUCIONA EL PROBLEMA DE LA BARRA AL HACER SCROLL, CUANDO SE COMENTA LA ETIQUETA EN EL INDEX
+
+// Barra de progreso en scroll
+function myFunction() {
+var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+var scrolled = (winScroll / height) * 100;
+document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+// Efecto para animar las habilidades cuando se llega a la sección
 function efectoHabilidades() {
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if (distancia_skills >= 300) {
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("photoshop");
-        habilidades[3].classList.add("wordpress");
-        habilidades[4].classList.add("drupal");
-        habilidades[5].classList.add("comunicacion");
-        habilidades[6].classList.add("trabajo");
-        habilidades[7].classList.add("creatividad");
-        habilidades[8].classList.add("dedicacion");
-        habilidades[9].classList.add("proyect");
+var skills = document.getElementById("skills");
+if (!skills) return; // Detener si la sección no existe
+
+javascript
+Copiar
+Editar
+var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+if (distancia_skills >= 800) {
+    let habilidades = document.getElementsByClassName("progreso");
+    const clases = [
+        "javascript", "htmlcss", "photoshop", "wordpress", "drupal",
+        "comunicacion", "trabajo", "creatividad", "dedicacion", "proyect"
+    ];
+    for (let i = 0; i < habilidades.length && i < clases.length; i++) {
+        habilidades[i].classList.add(clases[i]);
     }
 }
+}
+
+// Asignar el evento scroll para ambas funciones
+window.addEventListener("scroll", function () {
+myFunction();
+efectoHabilidades();
+});
+
+
+// FIN ESTE CODIGO SOLUCIONA EL PROBLEMA DE LA BARRA AL HACER SCROLL, CUANDO SE COMENTA LA ETIQUETA EN EL INDEX
+
+
+
+
 
 // Efecto botón de desplazamiento hacia arriba
 const btn_scrolltop = document.getElementById("btn_scrolltop");

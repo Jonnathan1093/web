@@ -569,10 +569,17 @@ align-items: center;
   margin: auto;
 }
 .curriculum h2{
-  font-size: 2rem;
+  /* font-size: 2rem;
   font-family: 'Righteous';
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0; */
+  font-size: 38px;
+  font-family: 'Russo One';
+  margin-bottom: 25px;
+  display: flex;
+  /* flex-wrap: wrap;  */
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .timeline {
